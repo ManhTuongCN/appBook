@@ -9,12 +9,15 @@ import data from "../common";
 })
 export class NewsPage implements OnInit {
   showInfor: any;
+  content: any;
   constructor(private activeRouter: ActivatedRoute) {
   
    }
 
   ngOnInit() {
     this.showInfor = data.dataBook;
+    this.content = this.showInfor.contentPage;
+    console.log(escape(this.content))
   }
 
 }
