@@ -1,0 +1,39 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.md-cards h3 {
+  padding: .5em;
+  margin: 0;
+}
+
+.md-img {
+  pointer-events: none;
+  border-radius: 8px;
+}
+
+.demo-card .mbsc-card-title {
+  font-size: 14px;
+  padding-top: 8px;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+}
+.demo-card .mbsc-card-subtitle {
+  font-size: 14px;
+  padding-top: 8px;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+}
+.md-img{
+  width: 100%;
+  height: 150px;
+}
+
+.md-rank {
+  font-size: 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}

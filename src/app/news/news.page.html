@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>news</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <img class="md-img" src = {{showInfor.avataBook}} />
+            <ion-label>
+                <h2>Tên sách: {{showInfor.title}}</h2>
+                <h2>Tác giả: {{showInfor.author}}</h2>
+                <h3>Nhà xuất bản: {{showInfor.publishingCompany}}</h3>
+                <h3>Người dịch: {{showInfor.translator}}</h3>
+                <h3>Ngày xuất bản: {{showInfor.releaseDate}}</h3>
+                <p><b>Mô tả :</b> {{showInfor.description}}</p>
+              </ion-label>
+          </ion-card-header>
+        <ion-card-header>
+          <ion-card-subtitle>Tóm tắt sơ lược</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <p>{{showInfor.contentPage}}</p>
+        </ion-card-content>
+      </ion-card>
+   
+</ion-content>

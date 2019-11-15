@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="md-cards">
+      <div class="md-card-cont">
+          <h3>Lịch sử các nước đế quốc</h3>
+          <mbsc-scrollview [options]="scrollViewOptions" class="demo-card">
+              <mbsc-scrollview-item mbsc-card *ngFor="let item of (results | async)" (click)="detailBook(item)"> 
+                  <mbsc-card-content>
+                      <img class="md-img" src={{item.avataBook}} draggable="false">
+                      <mbsc-card-title>{{item.title}}</mbsc-card-title>
+                      <mbsc-card-subtitle>{{item.author}}</mbsc-card-subtitle>
+                  </mbsc-card-content>
+              </mbsc-scrollview-item>
+          </mbsc-scrollview>
+      </div>
+  </div>
+</ion-content>
+
