@@ -4,25 +4,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content>  
     <ion-card>
-        <ion-card-header>
-            <img class="md-img" src = {{showInfor.avataBook}} />
-            <ion-label>
-                <h2>Tên sách: {{showInfor.title}}</h2>
-                <h2>Tác giả: {{showInfor.author}}</h2>
-                <h3>Nhà xuất bản: {{showInfor.publishingCompany}}</h3>
-                <h3>Người dịch: {{showInfor.translator}}</h3>
-                <h3>Ngày xuất bản: {{showInfor.releaseDate}}</h3>
-                <p><b>Mô tả :</b> {{showInfor.description}}</p>
+        <ion-card-header > 
+          <div class="ion-card-header">
+              <img class="md-img" src = {{showInfor.avataBook}} style="width: 70px;height: 100px;" />
+              <ion-label>
+                <h5 style="font-size: 12px;">Tên: {{showInfor.title}}</h5>
+                <h5 style="font-size: 12px;">Tác giả: {{showInfor.author}}</h5>
+                <h5 style="font-size: 12px;">NXB: {{showInfor.publishingCompany}}</h5>
+                <h5 style="font-size: 12px;">Người dịch: {{showInfor.translator}}</h5>
+                <h5 style="font-size: 12px;">Ngày xuất bản: {{showInfor.releaseDate}}</h5>
               </ion-label>
+            </div>
+            <ion-card-subtitle>Tóm tắt sơ lược</ion-card-subtitle>
           </ion-card-header>
-        <ion-card-header>
-          <ion-card-subtitle>Tóm tắt sơ lược</ion-card-subtitle>
-        </ion-card-header>
         <ion-card-content>
-            <p>{{showInfor.contentPage}}</p>
+            <p innerHTML="{{showInfor.contentPage}}"></p>
         </ion-card-content>
       </ion-card>
-   
 </ion-content>

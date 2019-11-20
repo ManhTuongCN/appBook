@@ -26,7 +26,7 @@ export class HomePage {
     'bluetooth',
     'build'
   ];
-  url = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/dataBook.json";
+  url = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/dataBooks.json";
   results: any;
   scrollViewOptions: MbscScrollViewOptions = {
     layout: 'fixed',
