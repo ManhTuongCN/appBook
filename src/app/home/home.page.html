@@ -17,7 +17,7 @@
               <mbsc-scrollview-item mbsc-card *ngFor="let item of (results | async)" (click)="detailBook(item)"> 
                   <mbsc-card-content>
                       <img class="md-img" src={{item.avataBook}} draggable="false">
-                      <mbsc-card-title>{{item.title}}</mbsc-card-title>
+                      <mbsc-card-title><b>{{item.title}}</b></mbsc-card-title>
                       <mbsc-card-subtitle>{{item.author}}</mbsc-card-subtitle>
                   </mbsc-card-content>
               </mbsc-scrollview-item>

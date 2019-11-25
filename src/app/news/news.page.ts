@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 import data from "../common";
 
@@ -12,12 +14,15 @@ import data from "../common";
 export class NewsPage implements OnInit {
   showInfor: any;
   content: any;
-  constructor(private activeRouter: ActivatedRoute) {
+  constructor(private activeRouter: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
     this.showInfor = data.dataBook;
     this.content = this.showInfor.contentPage;
+  }
+  backToHome () {
+    this.router.navigate(["home/"]);
   }
 
 }

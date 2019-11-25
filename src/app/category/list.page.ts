@@ -33,8 +33,6 @@ export class ListPage implements OnInit {
     this.results = this.http.get(this.url).pipe(
       map(
         results => {
-          console.log("sjdhjfsdjfg");
-          console.log('RAW :: ',results);
           return results;
         }
       )
@@ -43,15 +41,6 @@ export class ListPage implements OnInit {
   }
 
   ngOnInit() {
-    // this.results = this.http.get(this.url).pipe(
-    //     map(
-    //       results => {
-    //         console.log("sjdhjfsdjfg");
-    //         console.log('RAW :: ',results);
-    //         return results;
-    //       }
-    //     )
-    //   );
   }
 
 }

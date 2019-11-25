@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>news</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon name="undo" (click)="backToHome()"></ion-icon>
+    </ion-buttons>
+    
+    <ion-title>
+      Information Detail
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,11 +16,11 @@
           <div class="ion-card-header">
               <img class="md-img" src = {{showInfor.avataBook}} style="width: 70px;height: 100px;" />
               <ion-label>
-                <h5 style="font-size: 12px;">Tên: {{showInfor.title}}</h5>
-                <h5 style="font-size: 12px;">Tác giả: {{showInfor.author}}</h5>
-                <h5 style="font-size: 12px;">NXB: {{showInfor.publishingCompany}}</h5>
-                <h5 style="font-size: 12px;">Người dịch: {{showInfor.translator}}</h5>
-                <h5 style="font-size: 12px;">Ngày xuất bản: {{showInfor.releaseDate}}</h5>
+                <h5 style="font-size: 14px;">Tên: {{showInfor.title}}</h5>
+                <h5 style="font-size: 14px;">Tác giả: {{showInfor.author}}</h5>
+                <h5 style="font-size: 14px;">NXB: {{showInfor.publishingCompany}}</h5>
+                <h5 style="font-size: 14px;">Người dịch: {{showInfor.translator}}</h5>
+                <h5 style="font-size: 14px;">Ngày xuất bản: {{showInfor.releaseDate}}</h5>
               </ion-label>
             </div>
             <ion-card-subtitle>Tóm tắt sơ lược</ion-card-subtitle>
