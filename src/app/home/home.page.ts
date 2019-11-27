@@ -27,7 +27,9 @@ export class HomePage {
     'build'
   ];
   url = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/dataBooks.json";
+  urlAsianHistory = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/asianHistory.json";
   results: any;
+  arrAsianHistory: any;
   scrollViewOptions: MbscScrollViewOptions = {
     layout: 'fixed',
     itemWidth: 150,
@@ -40,6 +42,14 @@ export class HomePage {
           results => {
             console.log('RAW :: ',results);
             return results;
+          }
+        )
+      );
+      this.arrAsianHistory = this.http.get(this.urlAsianHistory).pipe(
+        map(
+          result => {
+            console.log('RAW :: ',result);
+            return result;
           }
         )
       );

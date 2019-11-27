@@ -23,5 +23,18 @@
           </mbsc-scrollview>
       </div>
   </div>
+  <div class="md-cards">
+    <div class="md-card-cont">
+        <h3>Lịch sử các nước châu á</h3>
+        <mbsc-scrollview [options]="scrollViewOptions" class="demo-card">
+            <mbsc-scrollview-item headerText="123123" class="items"  mbsc-card *ngFor="let item of (arrAsianHistory | async)" (click)="detailBook(item)"> 
+                <mbsc-card-content headerText="1123">
+                    <img class="md-img" src={{item.avataBook}} draggable="false">
+                    <mbsc-card-title><b>{{item.title}}</b></mbsc-card-title>    
+                </mbsc-card-content>
+            </mbsc-scrollview-item>
+        </mbsc-scrollview>
+    </div>
+</div>
 </ion-content>
 
