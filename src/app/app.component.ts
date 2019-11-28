@@ -21,6 +21,11 @@ export class AppComponent {
       url: '/category',
       icon: 'logo-buffer'
     },
+    {
+      title: 'Profile',
+      url: '/profile',
+      icon: 'logo-buffer'
+    }
    
   ];
 

@@ -1,0 +1,61 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+ .image_profile {
+    width: 100%;
+    height: 150px;
+    background-color: aquamarine;
+}
+.image_profile .col{
+    width: 100%;
+    height: 100%;
+}
+ .image_profile .col .contain_avata{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+} 
+
+ .image_profile .col .contain_text{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+} 
+.contain_text .sc-ion-label-ios-h {
+    margin-left: 45%;
+}
+ .name_profile {
+    width: 100%;
+    height: 200px;
+    background-color: bisque;
+}
+
+.name_profile .name {
+    width: 100%;
+    height: 25%;
+}
+.name_profile .email {
+    width: 100%;
+    height: 25%;
+}
+.name_profile .contain-pass-word {
+    width: 100%;
+    height: 50%;
+}
+.contain_tick_icon {
+    display: flex;
+    align-items: center;
+}
+.password {
+    display: flex;
+}
+
+.tick-icon {
+    width: 20px;
+    fill: red;
+
+}
