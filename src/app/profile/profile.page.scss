@@ -23,10 +23,14 @@
  .image_profile .col .contain_text{
     width: 100%;
     height: 30%;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
 } 
-.contain_text .sc-ion-label-ios-h {
-    margin-left: 45%;
+.contain_text .text_change_picture {
+    font-weight: bold;
+    padding-top: 10px;
+    color: #139dcc;
 }
  .name_profile {
     width: 100%;
@@ -37,26 +41,78 @@
 .name_profile .name {
     width: 100%;
     height: 25%;
+    font-weight: 500;
+    font-family: fantasy;
+    border-top: 2px #d4caca solid;
+    border-bottom: 1px #d4caca solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .name_profile .email {
     width: 100%;
     height: 25%;
+    font-weight: 500;
+    font-family: fantasy;
+    border-top: 1px #d4caca solid;
+    border-bottom: 1px #d4caca solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-.name_profile .contain-pass-word {
+.name_profile .contain_pass_word {
     width: 100%;
     height: 50%;
+    border-top: 1px #d4caca solid;
+    border-bottom: 2px #d4caca solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .contain_tick_icon {
     display: flex;
     align-items: center;
+    margin-bottom: auto;
+    padding-top: 10px;
+}
+.contain_tick_icon .text_email_verified {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #5aa715;
 }
 .password {
     display: flex;
     align-items: center;
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+.password .text_password {
+    font-weight: 500;
+    font-family: fantasy;
+    margin-right: auto;
+}
+.tick_icon {
+    width: 20px;
+    fill: #5aa715;
+
 }
 
-.tick-icon {
-    width: 20px;
-    fill: red;
-
+.footer {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.footer .button{
+    width: 94%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 8px;
+    background-color: #e5e3e6;
+    border: #d6d1d1 3px solid;
+    font-weight: 500;
+    font-family: fantasy;
 }

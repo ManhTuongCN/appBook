@@ -28,27 +28,28 @@ export class HomePage {
   ];
   url = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/dataBooks.json";
   urlAsianHistory = "https://raw.githubusercontent.com/ManhTuongCN/dataJson/master/asianHistory.json";
-  results: any;
-  arrAsianHistory: any;
+  results: any = [];
+  arrAsianHistory: any = [];
   scrollViewOptions: MbscScrollViewOptions = {
     layout: 'fixed',
     itemWidth: 150,
     snap: false
   };
+ count = 0 ;
 
   constructor(private http: HttpClient, private router: Router) {
-      this.results = this.http.get(this.url).pipe(
-        map(
-          results => {
-            console.log('RAW :: ',results);
-            return results;
-          }
-        )
-      );
+    let that = this;
+      this.http.get(this.url).toPromise()
+        .then((r) =>{
+          console.log('JSON :: ',JSON.stringify(r));
+          that.results = r;
+        })
+        .catch((e)=> console.log("error: " + e));
       this.arrAsianHistory = this.http.get(this.urlAsianHistory).pipe(
         map(
           result => {
             console.log('RAW :: ',result);
+            that.count = (result as Array<any>).length;
             return result;
           }
         )

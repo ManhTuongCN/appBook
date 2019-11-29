@@ -9,8 +9,8 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-    //loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    //loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'category',
