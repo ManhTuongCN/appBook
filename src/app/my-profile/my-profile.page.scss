@@ -1,0 +1,23 @@
+.contain-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.contain-content ion-grid {
+    width: 100%;
+    padding: 0px;
+}
+.row-contain-avatar {
+    display: flex;
+    justify-content: center;
+}
+.text-change-profied {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-tick {
+    width: 20px;
+    height: 20px;
+}

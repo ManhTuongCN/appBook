@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+    ion-grid .row-avata {
+      background-color: #f7f7f7;
+      border: solid 1px #ddd;
+      padding: 10px;
+    }
+  </style>
+
+</ion-header>
+
+<ion-content>
+  <div class = "contain-content">
+    <ion-grid>
+        <ion-row class="row-avata">
+          <ion-col>
+              <ion-row class="row-contain-avatar">
+                  <ion-avatar>
+                      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+                    </ion-avatar>
+              </ion-row>
+              <ion-row class="text-change-profied">
+                  <ion-label color="dark">Change profile picture</ion-label>
+              </ion-row>
+          </ion-col>
+        </ion-row>
+      
+        <ion-row> 
+          <ion-col size="6">
+            <ion-label color="dark">FULL NAME</ion-label>
+          </ion-col>
+          <ion-col size="6">
+              <ion-label color="danger">Manh Tuong</ion-label>
+          </ion-col>
+        </ion-row>   
+        <ion-row>
+            <img class = "icon-tick" src="/assets/img/tickTrue.svg" />
+            <ion-label color="dark">Email verified</ion-label>
+        </ion-row>   
+        <ion-row>
+            <ion-col size="6"><ion-label color="dark">PASSWORD</ion-label></ion-col>
+            <ion-col size="6"><ion-button color="light" size="large">RESET PASSWORD</ion-button></ion-col>
+        </ion-row>   
+    </ion-grid>
+    <section class="full-width">
+        <ion-button expand="full" color="secondary">LOG OUT</ion-button>
+      </section>
+  </div>
+</ion-content>

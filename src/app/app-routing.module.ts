@@ -9,15 +9,16 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    //loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./my-profile/my-profile.module').then(m => m.MyProfilePageModule)
+    //loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'category',
     loadChildren: () => import('./category/list.module').then(m => m.ListPageModule)
   },
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
-  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' }
+  { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
+  { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' }
 ];
 
 @NgModule({

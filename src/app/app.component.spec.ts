@@ -64,6 +64,7 @@ describe('AppComponent', () => {
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/category');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/news');
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/profile');
+    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/my-profile');
   });
 
 });

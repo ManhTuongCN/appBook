@@ -25,8 +25,12 @@ export class AppComponent {
       title: 'Profile',
       url: '/profile',
       icon: 'logo-buffer'
+    },
+    {
+      title: 'my profile',
+      url: '/my-profile',
+      icon: 'logo-buffer'
     }
-   
   ];
 
   constructor(
