@@ -12,12 +12,70 @@
     display: flex;
     justify-content: center;
 }
-.text-change-profied {
-    display: flex;
-    justify-content: center;
-}
-
 .icon-tick {
     width: 20px;
     height: 20px;
+}
+.row-text-change-profied {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.row-name {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.row-email {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.row-email-tick {
+    //border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.row-email-tick ion-label {
+    padding-left: 10px;
+    color: #2ab72a !important;
+}
+.row-password {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.row-password ion-col {
+    display: flex;
+    align-items: center;
+}
+.row-password ion-col button {
+   height: 40px;
+   width: 170px;
+   border-radius: 20px;
+   font-weight: 800;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: medium;
+}
+.tittle-column {
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.content-column {
+    font-size: 12px;
+}
+
+.footer ion-button{margin-left: 10px;
+    margin-right: 10px;
+    border: #d6d5d3 3px solid;
+    border-radius: 5px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
