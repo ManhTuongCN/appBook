@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./my-profile/my-profile.module').then(m => m.MyProfilePageModule)
+    loadChildren: () => import('./sing-up/sing-up.module').then(m => m.SingUpPageModule)
     //loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
@@ -18,7 +18,8 @@ const routes: Routes = [
   },
   { path: 'news', loadChildren: './news/news.module#NewsPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
-  { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' },  { path: 'sing-in', loadChildren: './sing-in/sing-in.module#SingInPageModule' },
+  { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' },
+  { path: 'sing-in', loadChildren: './sing-in/sing-in.module#SingInPageModule' },
   { path: 'sing-up', loadChildren: './sing-up/sing-up.module#SingUpPageModule' }
 
 ];

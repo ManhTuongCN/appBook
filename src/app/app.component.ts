@@ -30,6 +30,16 @@ export class AppComponent {
       title: 'my profile',
       url: '/my-profile',
       icon: 'logo-buffer'
+    },
+    {
+      title: 'sing up',
+      url: '/sing-up',
+      icon: 'logo-buffer'
+    },
+    {
+      title: 'sing in',
+      url: '/sing-in',
+      icon: 'logo-buffer'
     }
   ];
 
