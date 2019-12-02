@@ -16,6 +16,11 @@
     width: 100%;
     padding: 0px;
 }
+.contain-content ion-grid ion-row{
+    border-radius: 10px 10px 0 0;
+    border-top: 1px solid #dedede;
+}
+
 .row-sing-in{
     margin-top: 10px;
 }
@@ -61,6 +66,7 @@
     position: relative;
     text-align: center;
     width: 100%;
+    z-index: 10000
 }
 .legend {
 padding: 10px;
@@ -88,4 +94,6 @@ z-index: -1;
     border: #dedede5e 3px solid;
     font-family: fantasy;
     font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
