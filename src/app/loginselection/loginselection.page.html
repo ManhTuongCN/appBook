@@ -1,0 +1,51 @@
+<ion-header>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+  <style>
+    /* :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    } */
+
+    
+  </style>
+</ion-header>
+
+<ion-content>
+  <div class = "contain-content">
+    <ion-grid class = "header">
+        <ion-row>
+            <ion-col size = 12 class="column-close">
+              <ion-icon name = "close" class = "icon-close"></ion-icon>
+            </ion-col>
+          </ion-row>
+        <ion-row class = "row-logo">
+          <ion-col size = 12 class = "column-logo">
+            <img class = "icon-logo" src="/assets/img/logo-car-buzze.svg" />
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid class="footer">
+      <ion-row class = "login-facebook">
+        <ion-col size = 12 class = "column-login-fb">
+          <ion-button class="button-login-fb" expand="full" color="light">LOGIN WITH FACEBOOK</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class = "login-email">
+        <ion-col size = 12 class = "column-login-email">
+            <ion-label>Don't have a Facebook account?</ion-label>
+            <ion-button expand="full" color="light">LOGIN WITH EMAIL</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class = "login">
+          <ion-col size = 12 class = "column-sing-up">
+            <ion-label>Don't have an account?</ion-label>
+            <ion-button expand="full" color="light">SING UP</ion-button>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

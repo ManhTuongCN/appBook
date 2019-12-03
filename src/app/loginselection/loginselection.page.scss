@@ -1,0 +1,61 @@
+
+.contain-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: black;
+}
+.contain-content ion-grid {
+    width: 100%;
+    padding: 0px;
+}
+.column-close {
+    text-align: right;
+}
+.icon-close {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+.column-logo {
+    display: flex !important;
+    justify-content: center !important;
+}
+.icon-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 20px;
+    align-items: center
+}
+
+.footer ion-row {
+    height: 25%;
+    width: 95%;
+}
+.footer ion-row ion-col {
+    text-align: center;
+}
+.footer ion-row ion-col ion-button{
+    height: 70%;
+    font-weight: 400;
+    font-family: fantasy;
+    font-size: 18px;
+}
+.footer ion-row ion-col ion-label{
+    color: white;
+    font-size: 12px;
+}
+.button-login-fb  {
+    margin-top: 5%;
+    --ion-color-base: #254689!important;
+    --ion-color-contrast: #fffefe!important;
+}
+
