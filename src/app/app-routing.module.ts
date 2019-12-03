@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./sing-up/sing-up.module').then(m => m.SingUpPageModule)
+    loadChildren: () => import('./contactus/contactus.module').then(m => m.ContactusPageModule)
     //loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
@@ -21,7 +21,8 @@ const routes: Routes = [
   { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' },
   { path: 'sing-in', loadChildren: './sing-in/sing-in.module#SingInPageModule' },
   { path: 'sing-up', loadChildren: './sing-up/sing-up.module#SingUpPageModule' },
-  { path: 'loginselection', loadChildren: './loginselection/loginselection.module#LoginselectionPageModule' }
+  { path: 'loginselection', loadChildren: './loginselection/loginselection.module#LoginselectionPageModule' },
+  { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' }
 ];
 
 @NgModule({

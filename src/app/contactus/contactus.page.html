@@ -1,0 +1,112 @@
+<ion-header>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+
+</ion-header>
+
+<ion-content>
+  <div class = "contain-content">
+    <ion-grid>
+        <ion-row class = "tittle"> 
+            <ion-col size = 12 class = "tittle-column">
+              <ion-label>Contact Us</ion-label>
+              <ion-icon name = "close" class = "icon-close"></ion-icon>
+            </ion-col>
+        </ion-row>
+        <ion-row class = "row-contact-us">
+          <ion-col size = 12>
+            <ion-text color="dark">
+              <h1>Contact Us</h1>
+            </ion-text>
+          </ion-col>
+          <ion-col size = 12>
+            <p style="line-height: 30px;">
+              CarBuzz is a multi-platform automotive news and car-buying source, 
+              specializing in current events, in-market trends and en thusiast content.
+              From new car data and thoughtful editorials to all the juicy details on 
+              the latest supercar, we have an expansive online presence, including web,
+              mobile apps and social media.
+            </p>
+          </ion-col>
+          <ion-col size = 12 class = "row-line">
+              <div class="wrapper">
+                  <div class="legend">
+                    <div class="text-legend">
+                      <div style="transform: skew(20deg); font-weight: 800; color: black;">
+                          EMAIL US
+                      </div>
+                    
+                  </div>
+                  </div>
+              </div>
+          </ion-col>
+          <ion-col size = 12 style="line-height: 30px;">
+            <div>
+              <ion-label>To report to problem:</ion-label>
+            </div>
+            <div>
+                <ion-label class = "label-name">feedback@carbuzze.com</ion-label>
+            </div>
+          </ion-col>
+          <ion-col size = 12 style="line-height: 30px;">
+              <div>
+                <ion-label>For ads and partnership queries:</ion-label>
+              </div>
+              <div>
+                  <ion-label class = "label-name">ads@carbuzz.com</ion-label>
+              </div>
+          </ion-col>
+          <ion-col size = 12 style="line-height: 30px;">
+                <div>
+                  <ion-label>For tips and suggestions:</ion-label>
+                </div>
+                <div>
+                    <ion-label class = "label-name">tips@carbuzz.com</ion-label>
+                </div>
+          </ion-col>
+          <ion-col size = 12 class = "row-line">
+              <div class="wrapper">
+                  <div class="legend">
+                    <div class="text-legend">
+                      <div style="transform: skew(20deg); font-weight: 800; color: black;">
+                          OR USE FORM
+                      </div>
+                    
+                  </div>
+                  </div>
+              </div>
+          </ion-col>
+          <ion-col size = 12 class = "row-input">
+              <ion-input placeholder="Name"></ion-input>
+          </ion-col>
+          <ion-col size = 12 class = "row-input">
+              <ion-input placeholder="Email"></ion-input>
+          </ion-col>
+          <ion-col size = 12 class = "row-input">
+              <ion-list>
+                  <ion-item class = "selection">
+                      <ion-label>Select Topic</ion-label>
+                      <ion-select interface="popover">
+                        <ion-select-option value="nes">NES</ion-select-option>
+                        <ion-select-option value="n64">Nintendo64</ion-select-option>
+                        <ion-select-option value="ps">PlayStation</ion-select-option>
+                        <ion-select-option value="genesis">Sega Genesis</ion-select-option>
+                        <ion-select-option value="saturn">Sega Saturn</ion-select-option>
+                        <ion-select-option value="snes">SNES</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                </ion-list>
+          </ion-col>
+          <ion-col size = 12 class = "row-input-textarea">
+            <textarea class="input-textarea">
+            </textarea>
+          </ion-col>
+          <ion-col size = 12>
+              <button class = "row-send">SEND</button>
+          </ion-col>
+        </ion-row>
+
+    </ion-grid>
+  </div>
+</ion-content>
