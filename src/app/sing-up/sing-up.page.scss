@@ -1,21 +1,46 @@
 
-.tittle-header {
-    color: white;
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
 .contain-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
+    background-color: black;
 }
 .contain-content ion-grid {
     width: 100%;
     padding: 0px;
+    height: 90%;
+    border-radius: 10px 10px 0 0;
+    border-top: 1px solid #dedede;
+    margin-top: 30px;
+    background-color: white;
 }
+.tittle {
+    border-bottom: #eae6e6 1px solid;
+}
+.tittle-column {
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.tittle-column ion-label {
+    font-family: fantasy;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-right: auto;
+}
+.tittle-column ion-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+}
+.row-sing-up{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .row-sing-up ion-col .row-sing-up-fb {
     width: 100%;
     height: 50px;
@@ -52,7 +77,8 @@
     position: relative;
     text-align: center;
     width: 100%;
-  }
+    z-index: 10000
+}
 .legend {
 padding: 10px;
 margin: 0 auto;
@@ -72,11 +98,17 @@ left: 0;
 transform: translateY(-50%);
 z-index: -1;
 }
-
-.footer ion-button{margin-left: 10px;
+.footer {
+    background-color: white;
+    padding-bottom: 15%;
+}
+.footer ion-button{
+    margin-left: 10px;
     margin-right: 10px;
     background-color: #eee;
     border: #dedede5e 3px solid;
     font-family: fantasy;
     font-size: 18px;
+    --ion-color-base: #eee!important;
+    height: 80%;
 }
